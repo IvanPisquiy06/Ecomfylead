@@ -1,0 +1,639 @@
+{
+  "customFields": [
+    {
+      "id": "n9EtFwFI82kN0Gq7r8nQ",
+      "name": "Do You Live In The U.S?",
+      "fieldKey": "contact.do_you_live_in_the_us",
+      "placeholder": "",
+      "dataType": "RADIO",
+      "position": 400,
+      "picklistOptions": [
+        "Yes",
+        "No"
+      ]
+    },
+    {
+      "id": "BIYzW02R8F7OfXvRrNme",
+      "name": "Do You Own A Home?",
+      "fieldKey": "contact.do_you_own_a_home",
+      "placeholder": "",
+      "dataType": "RADIO",
+      "position": 450,
+      "picklistOptions": [
+        "Yes",
+        "No"
+      ]
+    },
+    {
+      "id": "dviBHBuEIKzoXuSqTecM",
+      "name": "Click Below",
+      "fieldKey": "contact.click_below",
+      "placeholder": "",
+      "dataType": "TEXT",
+      "position": 500
+    },
+    {
+      "id": "H2CDVQhHPCYihd0EIAva",
+      "name": "tcpa",
+      "fieldKey": "contact.tcpa",
+      "placeholder": "",
+      "dataType": "TEXT",
+      "position": 350
+    },
+    {
+      "id": "gLS8WLpxJJ7D0xYBZO3d",
+      "name": "tcpa Language",
+      "fieldKey": "contact.tcpa_language",
+      "placeholder": "",
+      "dataType": "TEXT",
+      "position": 400
+    },
+    {
+      "id": "Kt3TeuXT6WyBIObXCoSX",
+      "name": "provider",
+      "fieldKey": "contact.provider",
+      "placeholder": "",
+      "dataType": "TEXT",
+      "position": 450
+    },
+    {
+      "id": "rsBmGcNzcek2KEsutPv4",
+      "name": "Website Url",
+      "fieldKey": "contact.website_url",
+      "placeholder": "",
+      "dataType": "TEXT",
+      "position": 500
+    },
+    {
+      "id": "IBMCVuwv6YAgO7lOtL1l",
+      "name": "credit",
+      "fieldKey": "contact.credit",
+      "placeholder": "",
+      "dataType": "TEXT",
+      "position": 550
+    },
+    {
+      "id": "kY0heeL7xBAnhdCh22ez",
+      "name": "Lead Automation",
+      "fieldKey": "contact.lead_automation",
+      "placeholder": "",
+      "dataType": "RADIO",
+      "position": 23,
+      "picklistOptions": [
+        "Yes",
+        "No"
+      ]
+    },
+    {
+      "id": "30pujNw65EbsAk9c1idl",
+      "name": "Home Eval Address",
+      "fieldKey": "contact.home_eval_address",
+      "placeholder": "Home Eval Address",
+      "dataType": "TEXT",
+      "position": 15
+    },
+    {
+      "id": "iJbIny0gqvWJ6i6c3MiI",
+      "name": "universal_leadid",
+      "fieldKey": "contact.universal_leadid",
+      "placeholder": "universal_leadid",
+      "dataType": "LARGE_TEXT",
+      "position": 21
+    },
+    {
+      "id": "1n1FU33xLt8sEAmK9w8I",
+      "name": "jornaya_lead_id",
+      "fieldKey": "contact.jornaya_lead_id",
+      "placeholder": "jornaya_lead_id",
+      "dataType": "LARGE_TEXT",
+      "position": 14
+    },
+    {
+      "id": "udmta0lmvnNXItmvvTcH",
+      "name": "session_id",
+      "fieldKey": "contact.session_id",
+      "placeholder": "session_id",
+      "dataType": "LARGE_TEXT",
+      "position": 24
+    },
+    {
+      "id": "00ayEPJZiECOEgQfyfQb",
+      "name": "user agent",
+      "fieldKey": "contact.user_agent",
+      "placeholder": "",
+      "dataType": "LARGE_TEXT",
+      "position": 13
+    },
+    {
+      "id": "kHsU1RWd5rvihCB8Zicx",
+      "name": "ip",
+      "fieldKey": "contact.ip",
+      "placeholder": "",
+      "dataType": "LARGE_TEXT",
+      "position": 22
+    },
+    {
+      "id": "ZWXPhSDGq2D6R3qpi5Gv",
+      "name": "device",
+      "fieldKey": "contact.device",
+      "placeholder": "",
+      "dataType": "LARGE_TEXT",
+      "position": 19
+    },
+    {
+      "id": "NnJU9hd9ctwQVPSZFXqI",
+      "name": "gender",
+      "fieldKey": "contact.gender",
+      "placeholder": "",
+      "dataType": "LARGE_TEXT",
+      "position": 18
+    },
+    {
+      "id": "fWopYJZGwcbyt34H3r7s",
+      "name": "Car",
+      "fieldKey": "contact.car",
+      "placeholder": "",
+      "dataType": "TEXTBOX_LIST",
+      "position": 20,
+      "picklistOptions": [
+        {
+          "id": "5a0563c5-6f94-4be1-acb8-d60717f043cd",
+          "label": "Year",
+          "prefillValue": ""
+        },
+        {
+          "id": "5af7a358-15a7-4de6-8143-f77d58920bcc",
+          "label": "Make",
+          "prefillValue": ""
+        },
+        {
+          "id": "263f7cc1-f9a6-427e-b495-68b08728db76",
+          "label": "make_desc",
+          "prefillValue": ""
+        },
+        {
+          "id": "c98419f4-29ef-415c-9fef-1e8c05c101ad",
+          "label": "model_desc",
+          "prefillValue": ""
+        },
+        {
+          "id": "859e41b8-c434-4554-9d7f-97baa641bf07",
+          "label": "model",
+          "prefillValue": ""
+        },
+        {
+          "id": "d004c2a9-c574-4608-97c8-29ee8920a051",
+          "label": "vin",
+          "prefillValue": ""
+        }
+      ]
+    },
+    {
+      "id": "9qoRp9NJxxW4YGkVm7nP",
+      "name": "Driver",
+      "fieldKey": "contact.driver",
+      "placeholder": "",
+      "dataType": "TEXTBOX_LIST",
+      "position": 17,
+      "picklistOptions": [
+        {
+          "id": "31d4265a-6d98-4dac-9671-9fe4d47f5950",
+          "label": "Birthday",
+          "prefillValue": ""
+        },
+        {
+          "id": "2884bf83-6eae-4aaa-bdd6-64255f75f009",
+          "label": "marital_status",
+          "prefillValue": ""
+        },
+        {
+          "id": "2f909146-c24d-49ab-99c3-0e6418b28e93",
+          "label": "accident",
+          "prefillValue": ""
+        },
+        {
+          "id": "ef7fdb59-d9bf-4920-a012-cb507b8d840c",
+          "label": "dui",
+          "prefillValue": ""
+        },
+        {
+          "id": "7be9e241-d1cc-46fd-a941-3d538a0f261c",
+          "label": "num_vehicles",
+          "prefillValue": ""
+        },
+        {
+          "id": "668ac680-22de-4df2-ac3c-f628626623d4",
+          "label": "currently_insured",
+          "prefillValue": ""
+        },
+        {
+          "id": "ad221449-6461-408b-967f-1e7816f6bb45",
+          "label": "current_carrier",
+          "prefillValue": ""
+        },
+        {
+          "id": "7561e2b0-d530-45cd-b59e-5dea57638fae",
+          "label": "coverage_length",
+          "prefillValue": ""
+        },
+        {
+          "id": "592420c2-3cd9-44ad-91c8-f7196a336db0",
+          "label": "homeowner",
+          "prefillValue": ""
+        },
+        {
+          "id": "eb1a8fae-a05e-4363-8096-79302ff2bcd8",
+          "label": "military_affiliation",
+          "prefillValue": ""
+        }
+      ]
+    },
+    {
+      "id": "4V8vog1kDr1LbzjCslxE",
+      "name": "Phone Number",
+      "fieldKey": "contact.phone_number",
+      "placeholder": "",
+      "dataType": "TEXT",
+      "position": 16
+    },
+    {
+      "id": "TLQPG1ZKeKQKDA0jtpiG",
+      "name": "El Accidente Fue Culpa Suya ",
+      "fieldKey": "contact.el_accidente_fue_culpa_suya",
+      "placeholder": "",
+      "dataType": "RADIO",
+      "position": 7,
+      "picklistOptions": [
+        "Yes",
+        "No"
+      ]
+    },
+    {
+      "id": "UdcHPc6WR9N7o8f0uNJi",
+      "name": "Fecha Del Accidente",
+      "fieldKey": "contact.fecha_del_accidente",
+      "placeholder": "",
+      "dataType": "DATE",
+      "position": 10
+    },
+    {
+      "id": "DHxwf7WzxG5oyhxQNbK2",
+      "name": "Ya tiene abogado asignado al caso?",
+      "fieldKey": "contact.ya_tiene_abogado_asignado_al_caso",
+      "placeholder": "",
+      "dataType": "RADIO",
+      "position": 8,
+      "picklistOptions": [
+        "Yes",
+        "No"
+      ]
+    },
+    {
+      "id": "VFCrbfLmOZ0IkDGky95x",
+      "name": "Cuentanos Los Detalles del Accidente",
+      "fieldKey": "contact.cuentanos_los_detalles_del_accidente",
+      "placeholder": "",
+      "dataType": "LARGE_TEXT",
+      "position": 9
+    },
+    {
+      "id": "oB4WLxvOgU5mEbLx9Ely",
+      "name": "Usted obtuvo tratamiento con medicos?",
+      "fieldKey": "contact.usted_obtuvo_tratamiento_con_medicos",
+      "placeholder": "",
+      "dataType": "RADIO",
+      "position": 11,
+      "picklistOptions": [
+        "Yes",
+        "No"
+      ]
+    },
+    {
+      "id": "32S7swkK7TfDE5GPn5aw",
+      "name": "xxTrustedFormToken_0",
+      "fieldKey": "contact.1",
+      "placeholder": "xxTrustedFormToken_0",
+      "dataType": "TEXT",
+      "position": 6
+    },
+    {
+      "id": "zG9DxHSmlfJCyFTq0Axz",
+      "name": "xxTrustedFormCertUrl_0",
+      "fieldKey": "contact.2",
+      "placeholder": "xxTrustedFormCertUrl_0",
+      "dataType": "TEXT",
+      "position": 25
+    },
+    {
+      "id": "GvWrklyTLmCcvXx8Rrt9",
+      "name": "xxTrustedFormPingUrl_0",
+      "fieldKey": "contact.3",
+      "placeholder": "xxTrustedFormPingUrl_0",
+      "dataType": "TEXT",
+      "position": 5
+    },
+    {
+      "id": "CZ2OdXImvVSdKhSHWglT",
+      "name": "Was the accident your fault?",
+      "fieldKey": "contact.was_the_accident_your_fault",
+      "placeholder": "Was the accident your fault?",
+      "dataType": "RADIO",
+      "position": 1,
+      "picklistOptions": [
+        "No",
+        "Yes"
+      ]
+    },
+    {
+      "id": "s2svVRUD3BzINxeAk6zG",
+      "name": "Do You Have a Lawyer Assigned to the Case?",
+      "fieldKey": "contact.do_you_have_a_lawyer_assigned_to_the_case",
+      "placeholder": "Do You Have a Lawyer Assigned to the Case?",
+      "dataType": "RADIO",
+      "position": 0,
+      "picklistOptions": [
+        "No",
+        "Yes"
+      ]
+    },
+    {
+      "id": "hYI0fFltBJ9wHYyAzxYz",
+      "name": "Estimated Accident Date",
+      "fieldKey": "contact.estimated_accident_date",
+      "placeholder": "Estimated Accident Date",
+      "dataType": "DATE",
+      "position": 3
+    },
+    {
+      "id": "IU34J20hU6HieBvnxxsF",
+      "name": "Did You Receive Medical Treatment?",
+      "fieldKey": "contact.did_you_receive_medical_treatment",
+      "placeholder": "Did You Receive Medical Treatment?",
+      "dataType": "RADIO",
+      "position": 2,
+      "picklistOptions": [
+        "Yes",
+        "No"
+      ]
+    },
+    {
+      "id": "NWoIUD2c9aEZyD93Oh6c",
+      "name": "How Did it Happen? Mention all Important Details",
+      "fieldKey": "contact.how_did_it_happen_mention_all_important_details",
+      "placeholder": "How Did it Happen? Mention all Important Details",
+      "dataType": "LARGE_TEXT",
+      "position": 4
+    },
+    {
+      "id": "47kL8cZTjtG2ptHUzlPp",
+      "name": "¿El accidente fue culpa tuya?",
+      "fieldKey": "contact.el_accidente_fue_culpa_tuya",
+      "placeholder": "",
+      "dataType": "RADIO",
+      "position": 0,
+      "picklistOptions": [
+        "Si",
+        "No"
+      ]
+    },
+    {
+      "id": "yZGajN0vGgFlniPCQAKK",
+      "name": "¿Tiene un abogado asignado al caso?",
+      "fieldKey": "contact.tiene_un_abogado_asignado_al_caso",
+      "placeholder": "",
+      "dataType": "RADIO",
+      "position": 0,
+      "picklistOptions": [
+        "Si",
+        "No"
+      ]
+    },
+    {
+      "id": "iiyPhK0TyX3Q5tXfZ3eF",
+      "name": "Fecha estimada del accidente",
+      "fieldKey": "contact.fecha_estimada_del_accidente",
+      "placeholder": "",
+      "dataType": "DATE",
+      "position": 0
+    },
+    {
+      "id": "bN5QlLtuvg8HsfCjVwqI",
+      "name": "¿Recibió tratamiento médico?",
+      "fieldKey": "contact.recibi_tratamiento_mdico",
+      "placeholder": "",
+      "dataType": "RADIO",
+      "position": 0,
+      "picklistOptions": [
+        "Si",
+        "No"
+      ]
+    },
+    {
+      "id": "yZg9dGJJmO9iCfLm9DSB",
+      "name": "Su Casa Se Vio Afectada?",
+      "fieldKey": "contact.tubiste_daos",
+      "placeholder": "",
+      "dataType": "RADIO",
+      "position": 0,
+      "picklistOptions": [
+        "Si, Mi Casa Sufrio Daños",
+        "No, no Sufri Daños"
+      ]
+    },
+    {
+      "id": "yPOgkNf9muC2olkvzqj5",
+      "name": "Cuentanos los detalles",
+      "fieldKey": "contact.cuentanos_los_detalles",
+      "placeholder": "",
+      "dataType": "TEXT",
+      "position": 0
+    },
+    {
+      "id": "2TZwLXSxNDiOs5tb73AZ",
+      "name": "Are You the Homeowner?",
+      "fieldKey": "contact.are_you_the_homeowner",
+      "placeholder": "Are You the Homeowner?",
+      "dataType": "RADIO",
+      "position": 0,
+      "picklistOptions": [
+        "Yes, I'm the Homeowner",
+        "No, I Rent"
+      ]
+    },
+    {
+      "id": "ms9gLh9Vu3cCCsrzPEXN",
+      "name": "Verification",
+      "fieldKey": "contact.data_verify",
+      "dataType": "CHECKBOX",
+      "position": 0,
+      "picklistOptions": [
+        "by checking this box I agree to the terms of service and privacy policy"
+      ]
+    },
+    {
+      "id": "yZfzyf9HaFTOuffZZIHW",
+      "name": "How High is Your Electric Bill",
+      "fieldKey": "contact.single_cunto_pagas_en_electricidad_al_mes",
+      "placeholder": "Choose One",
+      "dataType": "SINGLE_OPTIONS",
+      "position": 0,
+      "picklistOptions": [
+        "$0 - $100",
+        "$100 - $300",
+        "$300 - $500",
+        "$500+"
+      ]
+    },
+    {
+      "id": "KnTyif0mdShR7tPLDCBu",
+      "name": "Propietario de Casa",
+      "fieldKey": "contact.propietario_de_casa",
+      "dataType": "RADIO",
+      "position": 0,
+      "picklistOptions": [
+        "Si, Soy Dueño de Mi Casa",
+        "No, Estoy Rentando"
+      ]
+    },
+    {
+      "id": "6nCwIq0GI6ZdYQwurGqL",
+      "name": "Valor de Factura",
+      "fieldKey": "contact.valor_de_factura",
+      "dataType": "RADIO",
+      "position": 0,
+      "picklistImageOptions": [
+        {
+          "label": "$0 - $100",
+          "src": "https://firebasestorage.googleapis.com/v0/b/highlevel-backend.appspot.com/o/location%2FouW5OzPSowFX91pMJutP%2Fcustom-field-store%2Fb11e9629-488e-42e4-8712-aa539d12baac.png?alt=media&token=a7f6d1bb-a27f-426a-b226-3cd1ddef23d0"
+        },
+        {
+          "label": "$100 - $300",
+          "src": "https://firebasestorage.googleapis.com/v0/b/highlevel-backend.appspot.com/o/location%2FouW5OzPSowFX91pMJutP%2Fcustom-field-store%2F1fcdbbc1-d2e6-4449-b2e6-261c13e3e210.png?alt=media&token=ac1f5a7b-c3a1-450b-961e-be3eee038bc4"
+        },
+        {
+          "label": "$300 - $500",
+          "src": "https://firebasestorage.googleapis.com/v0/b/highlevel-backend.appspot.com/o/location%2FouW5OzPSowFX91pMJutP%2Fcustom-field-store%2F1f58268f-d61e-4b3c-aeb4-c68ad60e52f1.png?alt=media&token=33c8282e-5f0f-4d21-8394-ed21df89bbfe"
+        },
+        {
+          "label": "$500+",
+          "src": "https://firebasestorage.googleapis.com/v0/b/highlevel-backend.appspot.com/o/location%2FouW5OzPSowFX91pMJutP%2Fcustom-field-store%2F203f77fb-7907-49cc-a0c5-37c568ce5e31.png?alt=media&token=fba63e88-9419-41ae-b619-014519a1975c"
+        }
+      ]
+    },
+    {
+      "id": "Po8omeMwGVgeXzlX1TFn",
+      "name": "What's The Level of Shadow your Roof Has?",
+      "fieldKey": "contact.whats_the_level_of_shadow_your_roof_has",
+      "placeholder": "",
+      "dataType": "SINGLE_OPTIONS",
+      "position": 75,
+      "picklistOptions": [
+        "No Shade",
+        "A Little Shade",
+        "A Lot Of Shade",
+        "Uncertain"
+      ]
+    },
+    {
+      "id": "eLqXQ8GIERkRNKkxVxmf",
+      "name": "transaction_id",
+      "fieldKey": "contact.transaction_id",
+      "placeholder": "",
+      "dataType": "TEXT",
+      "position": 125
+    },
+    {
+      "id": "0OSH0MyNwDUf8FSeHALO",
+      "name": "Es usted el dueño de la casa?",
+      "fieldKey": "contact.are_you_the_homeowner",
+      "placeholder": "Es usted el dueño de la casa?",
+      "dataType": "RADIO",
+      "position": 0,
+      "picklistOptions": [
+        "Sí, soy dueño de mi casa",
+        "No soy dueño"
+      ]
+    },
+    {
+      "id": "gQJyIiTzvC5f7syzXLOZ",
+      "name": "single ¿Cuánto pagas en Electricidad al mes?",
+      "fieldKey": "contact.single_cunto_pagas_en_electricidad_al_mes",
+      "placeholder": "Selecciona una Opcion",
+      "dataType": "SINGLE_OPTIONS",
+      "position": 0,
+      "picklistOptions": [
+        "$0 - $100",
+        "$100 - $300",
+        "$300 - $500",
+        "$500+"
+      ]
+    },
+    {
+      "id": "Uh0a9sIpjcZCS7O1vw28",
+      "name": "Verificación de datos",
+      "fieldKey": "contact.data_verify",
+      "placeholder": "Verificación de datos",
+      "dataType": "CHECKBOX",
+      "position": 0,
+      "picklistOptions": [
+        "Al marcar esta casilla acepto los Términos de uso y la Política de privacidad."
+      ]
+    },
+    {
+      "id": "TXSXvD0Bq6Y68Vx2MZQc",
+      "name": "Number Of Stories",
+      "fieldKey": "contact.number_of_stories",
+      "placeholder": "",
+      "dataType": "TEXT",
+      "position": 175
+    },
+    {
+      "id": "drDcxozbSbfPAj1gKLtR",
+      "name": "Residence Type",
+      "fieldKey": "contact.residence_type",
+      "placeholder": "",
+      "dataType": "TEXT",
+      "position": 225
+    },
+    {
+      "id": "cxCK0OBrbVruE2Uy9L90",
+      "name": "Year Built",
+      "fieldKey": "contact.year_built",
+      "placeholder": "",
+      "dataType": "TEXT",
+      "position": 275
+    },
+    {
+      "id": "LDXPLO287mb6IZRQrv1q",
+      "name": "Square Footage",
+      "fieldKey": "contact.square_footage",
+      "placeholder": "",
+      "dataType": "TEXT",
+      "position": 325
+    },
+    {
+      "id": "58EMbL2FrkrD46LKxMc4",
+      "name": "Insured",
+      "fieldKey": "contact.insured",
+      "placeholder": "",
+      "dataType": "TEXT",
+      "position": 375
+    },
+    {
+      "id": "6oBbwbPjiMjvoBZvDC1t",
+      "name": "Insurance Company",
+      "fieldKey": "contact.insurance_company",
+      "placeholder": "",
+      "dataType": "TEXT",
+      "position": 425
+    },
+    {
+      "id": "UvtzS4GQSRLru9uVnnDF",
+      "name": "Martial Status",
+      "fieldKey": "contact.martial_status",
+      "placeholder": "",
+      "dataType": "TEXT",
+      "position": 475
+    }
+  ]
+}
