@@ -1,0 +1,15 @@
+Este código PHP realiza una solicitud POST a la API de GoHighLevel con la intención de crear un nuevo contacto en la plataforma. El código comienza configurando algunas cabeceras HTTP para permitir el acceso a recursos de origen cruzado (CORS) y especificando que el tipo de contenido de la respuesta será JSON.
+
+A continuación, el código define una función llamada clean que elimina los caracteres especiales y reemplaza los espacios en una cadena de texto dada por su parámetro.
+
+Luego, se crean variables para almacenar los datos del contacto que se enviarán a la API. Estos datos se obtienen a través de la variable $_POST, que es un array asociativo que contiene las variables POST enviadas por un formulario HTML. En este caso, se esperan las variables email, first_name, last_name, full_address, phone_home, zip, provider, property_ownership, roof_shade, electric_bill, state, xxTrustedFormCertUrl e ip_address.
+
+Los datos del contacto se organizan en un array asociativo llamado apiPayload. Además de los datos del contacto, se definen algunos campos personalizados en el array $customsFields, que se agregarán al payload de la solicitud POST.
+
+Se realiza una solicitud POST a la API de GoHighLevel utilizando la función curl_init(). La URL a la que se realiza la solicitud POST es https://rest.gohighlevel.com/v1/contacts/, y se incluye un token de autenticación de acceso en la cabecera de la solicitud.
+
+Se utiliza la función curl_setopt_array() para establecer varias opciones de configuración para la solicitud CURL. En particular, se establece la URL de la solicitud, se especifica que se quiere recibir una respuesta JSON, se especifica que se envíen los datos del contacto en formato JSON y se incluye la cabecera de autenticación.
+
+Después de enviar la solicitud CURL, se comprueba si se ha producido algún error mediante la función curl_error(). Si no hay ningún error, la respuesta de la API se almacena en la variable $response.
+
+Finalmente, el código cierra la sesión CURL con la función curl_close() y devuelve la respuesta de la API al cliente que realizó la solicitud original.
