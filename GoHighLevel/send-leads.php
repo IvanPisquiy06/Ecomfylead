@@ -40,93 +40,113 @@
 
 <?php
 
-	header('Content-type: application/json');
-	header("Access-Control-Allow-Origin: *");
-	header('Access-Control-Allow-Credentials', 'true');
-	header('Access-Control-Max-Age', '60');
-	header('Access-Control-Allow-Headers', 'AccountKey,x-requested-with, Content-Type, origin, authorization, accept, client-security-token, host, date, cookie, cookie2');
-	header('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS');
-
-
 	function clean($string)
 	{
-		$string = str_replace(' ', '-', $string); // Replaces all spaces with hyphens.
-
 		$string = preg_replace('/[^A-Za-z0-9\-]/', '', $string); // Removes special chars.
 
-		return preg_replace('/-+/', '', $string);
+		$string = "+1" . $string;
+
+		echo $string;
+
+		return $string;
 	}
 
 	var_dump($_GET);
 
-	function data(){
-		$email                   = $_GET['email'];
-		$firstName               = $_GET['first_name'];
-		$lastName                = $_GET['last_name'];
-		$fullAddress             = $_GET['full_address'];
-		$phone                   = clean($_GET['phone_home']);
-		$postalCode              = $_GET['zip'];
-		$provider                = $_GET['provider'];
-		$propertyOwnership       = $_GET['property_ownership'];
-		$roofShade               = $_GET['roof_shade'];
-		$bill                    = $_GET['electric_bill'];
-		$tag                     = "powered-by-solar";
-		$state                   = $_GET['state'];
-		$trust 					 = "https://cert.trustedform.com/d333af53323a73d33385d98c57dede33dc1c05ab";
-		$ip 					 = $_GET["ip_address"];
+	$apiKey = "f9174c37-b1d6-46f3-a329-1fc18438bb7a";
+	$url = "https://rest.gohighlevel.com/v1/contacts/";
 
-		$apiPayload              = [
-			'email'     => $email,
-			'firstName' => $firstName,
-			'lastName'  => $lastName,
-			'phone'     => $phone,
-			'state'     => $state,
-			'name'      => sprintf('%s %s', $firstName, $lastName),
-			'address1'  => $fullAddress,
-			'postalCode' => $postalCode,
-		];
-		$customsFields           = [
-			'BIYzW02R8F7OfXvRrNme' => $propertyOwnership,
-			'kHeujw6yVJ9xmKX6Bov9' => $provider,
-			'yZfzyf9HaFTOuffZZIHW' => $bill,
-			'Po8omeMwGVgeXzlX1TFn' => $roofShade,
-			'kHsU1RWd5rvihCB8Zicx' => $ip,
-			'zG9DxHSmlfJCyFTq0Axz' => $trust,
-			'H2CDVQhHPCYihd0EIAva' => "By submitting your info, you authorize us and up to 4 of our PARTNER SOLAR COMPANIES to call you and send sms messages or text messages at your number. Your consent here is not based on a condition of purchase.
-			Copyright© 2023 poweredbysolar.energy. All Rights Reserved  PRIVACY POLICY || TERMS AND CONDITIONS",
-			'gLS8WLpxJJ7D0xYBZO3d' => "English",
-			'rsBmGcNzcek2KEsutPv4' => "poweredby.solar",
-			'IBMCVuwv6YAgO7lOtL1l' => "Good",
-		];
+	$email                   = $_GET['email'];
+	$firstName               = $_GET['first_name'];
+	$lastName                = $_GET['last_name'];
+	$fullAddress             = $_GET['full_address'];
+	$phone                   = clean($_GET['phone_home']);
+	$postalCode              = $_GET['zip'];
+	$provider                = $_GET['provider'];
+	$propertyOwnership       = $_GET['property_ownership'];
+	$roofShade               = $_GET['roof_shade'];
+	$bill                    = $_GET['electric_bill'];
+	$tag                     = "powered-by-solar";
+	$state                   = $_GET['state'];
+	$trust 					 = "https://cert.trustedform.com/d333af53323a73d33385d98c57dede33dc1c05ab";
+	$ip 					 = $_GET["ip_address"];
 
+	$customsFields             = array(
+		'BIYzW02R8F7OfXvRrNme' => $propertyOwnership,
+		'kHeujw6yVJ9xmKX6Bov9' => $provider,
+		'yZfzyf9HaFTOuffZZIHW' => $bill,
+		'Po8omeMwGVgeXzlX1TFn' => $roofShade,
+		'kHsU1RWd5rvihCB8Zicx' => $ip,
+		'zG9DxHSmlfJCyFTq0Axz' => $trust,
+		'H2CDVQhHPCYihd0EIAva' => "By submitting your info, you authorize us and up to 4 of our PARTNER SOLAR COMPANIES to call you and send sms messages or text messages at your number. Your consent here is not based on a condition of purchase.
+		Copyright© 2023 poweredbysolar.energy. All Rights Reserved  PRIVACY POLICY || TERMS AND CONDITIONS",
+		'gLS8WLpxJJ7D0xYBZO3d' => "English",
+		'rsBmGcNzcek2KEsutPv4' => "poweredby.solar",
+		'IBMCVuwv6YAgO7lOtL1l' => "Good",
+	);
 
-		$apiPayload['customField'] = $customsFields;
+	$apiPayload       = array(
+		"email"       => $email,
+		"phone"       => $phone,
+		"firstName"   => $firstName,
+		"lastName"    => $lastName,
+		"name"        => sprintf('%s %s', $firstName, $lastName),
+		"dateOfBirth" => "2000-08-06",
+		"address1"    => $fullAddress,
+		"city"        => "Miami",
+		"state"       => $state,
+		"country"     => "US",
+		"postalCode"  => $postalCode,
+		"companyName" => "Ecomfy",
+		"tags"		  => $tag,
+		"source"      => "test",
+		"customField" => $customsFields
+	);
 
-		if ($tag) {
-			$apiPayload['tags'] = [$tag];
+	$datajson = json_encode($apiPayload);
+
+	echo $datajson;
+
+	$curl = curl_init();
+
+	curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, false);
+	curl_setopt($curl, CURLOPT_URL, $url);
+	curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
+	curl_setopt($curl, CURLOPT_POST, true);
+	curl_setopt($curl, CURLOPT_POSTFIELDS, $datajson);
+	curl_setopt($curl, CURLOPT_HTTPHEADER, array(
+		"Content-Type: application/json",
+		"Authorization: Bearer " . $apiKey
+	));
+
+	curl_setopt_array($curl, [
+		CURLOPT_ENCODING       => "",
+		CURLOPT_MAXREDIRS      => 10,
+		CURLOPT_TIMEOUT        => 30,
+		CURLOPT_HTTP_VERSION   => CURL_HTTP_VERSION_1_1
+	]);
+
+	// Execute the Curl request
+	$response = curl_exec($curl);
+
+	// Check for errors
+	if (curl_errno($curl)) {
+		echo 'Curl error: ' . curl_error($curl);
+	} else {
+		// Get the HTTP response code
+		$httpCode = curl_getinfo($curl, CURLINFO_HTTP_CODE);
+	
+		// Check for API errors
+		if ($httpCode >= 400) {
+			echo 'API error: ' . $response;
+		} else {
+			// Print the response
+			echo $response;
 		}
-
-		print_r($apiPayload);
-
-
-		$curl = curl_init('https://rest.gohighlevel.com/v1/contacts/');
-
-		curl_setopt($curl,CURLOPT_POST, true);
-		curl_setopt($curl,CURLOPT_POSTFIELDS, json_encode($apiPayload));
-		curl_setopt($curl,CURLOPT_RETURNTRANSFER, true);
-
-		curl_setopt_array($curl, [
-			CURLOPT_ENCODING       => "",
-			CURLOPT_MAXREDIRS      => 10,
-			CURLOPT_TIMEOUT        => 30,
-			CURLOPT_HTTP_VERSION   => CURL_HTTP_VERSION_1_1,
-			CURLOPT_HTTPHEADER     => [
-				"Authorization: Bearer f9174c37-b1d6-46f3-a329-1fc18438bb7a",
-				"Content-Type: application/json",
-			],
-		]);
-
-		curl_close($curl);
 	}
+	// Close the Curl session
+	curl_close($curl);
+
+	echo $response;
 
 ?>
