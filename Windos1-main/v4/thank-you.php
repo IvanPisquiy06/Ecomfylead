@@ -413,6 +413,18 @@
 
 <?php
 
+    $current_url = 'https://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
+    $sourceid = '';
+
+    // Parse the URL and retrieve the query string
+    $url_parts = parse_url($current_url);
+    parse_str($url_parts['query'], $query);
+
+    // Check if the "utm_source" parameter exists and retrieve its value
+    if (isset($query['sub1'])) {
+    $sourceid = $query['sub1'];
+    }
+
     ini_set('max_execution_time', 100);
 
     // API endpoint URL
@@ -426,6 +438,7 @@
     $monthlyBill = $_POST['electric_bill'];
     $roofShade = $_POST['roof_shade'];
     $ip_address = $_SERVER['REMOTE_ADDR'];
+    $clickId = $_POST['clickid'];
 
     if($ownHome === 'Own'){
         $ownHome = 'YES';
@@ -468,6 +481,7 @@
         'creditRating' => 'FAIR',
         'purchaseTimeFrame' => 'OTHER',
         'userIp' => $ip_address,
+        'source' => $sourceId,
         'projectType' => 'NEW',
         'solarSystemType' => 'ELECTRICITY',
     );
